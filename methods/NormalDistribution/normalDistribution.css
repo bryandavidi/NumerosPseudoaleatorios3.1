@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+
+
+.title{
+    margin: 30px 0px;
+    text-align: center;
+    z-index: 5;
+    font-size: 1.5rem;
+}
+
+.content{
+    display: flex;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    height: 100%;
+    align-items:center;
+    justify-content: space-between;
+    background-color: rgb(0,170,228);
+    z-index: 3;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    height: 100%;
+}
+
+nav ul li{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+}
+
+nav ul li a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 50px 10px;
+  
+}
+
+nav ul li a:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color:rgb(0,170,228);
+}
+
+.container{
+    width: 80%;
+    display: grid;
+    grid-template-rows: 2fr 1fr 12fr;
+    margin: 0 auto;
+}
+
+.inputs-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+button{
+    display: block;
+    background-color: #29FD53;
+    color: black;
+    cursor: pointer;
+    height: 80%;
+    border-radius: 10px;
+    font-weight: 500;
+    border: none
+}
+
+.results{
+    margin-top: 20px;
+    max-height: 720px;
+    overflow: scroll;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+table thead{
+    background-color: rgb(0,170,228);
+    color: white;
+    position: sticky;
+}
+
+table thead th{
+    padding: 15px;
+}
+
+table tbody td{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tables{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}

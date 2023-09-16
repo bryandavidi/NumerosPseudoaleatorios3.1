@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meanSquares.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <nav>
+            <ul>
+                <li><a href="meanSquares.html">Cuadrados Medios</a></li>
+                <li><a href="../LinearCongruence/linearCongruence.html">Congruencia Lineal</a></li>
+                <li><a href="../MultiplicativeCongruence/multiplicativeCongruence.html">Congruencia Multiplicativa</a></li>
+                <li><a href="../UniformDistribution/uniformDistribution.html">Distribucion Uniforme</a></li>
+                <li><a href="../NormalDistribution/normalDistribution.html">Distribucion Normal</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="title">
+                <h2>Cuadrados Medios</h2>
+            </div>
+            <div class="inputs">
+                <div class="inputs-input">
+                    <label for="seed" class="">Semilla</label>
+                    <input type="number" class="" id="seed" required>
+                </div>
+                <div class="inputs-input">
+                    <label for="quantity" class="">Número de datos</label>
+                    <input type="number" class="" id="quantity" required>
+                </div>
+            </div>
+            <div class="inputs-button">
+                <button type="button"  id="generate" class ="btn">Generar</button>
+            </div>
+        <div class="results">
+            <table id="table-content">
+                <thead>
+                    <tr>
+                        <th scope="col">i</th>
+                        <th scope="col">Xi</th>
+                        <th scope="col">Xi^2</th>
+                        <th scope="col">Extensión</th>
+                        <th scope="col">Extracción</th>
+                        <th scope="col">Ri</th>
+                    </tr>
+                </thead>
+            
+            </table>
+        </div>
+        </div>
+    </div>
+    
+    <script src="MeanSquares.js"></script>
+</body>
+</html>

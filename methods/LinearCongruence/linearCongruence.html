@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="linearCongruence.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <nav>
+            <ul>
+                <li><a href="../MeanSquares/meanSquares.html">Cuadrados Medios</a></li>
+                <li><a href="../LinearCongruence/linearCongruence.html">Congruencia Lineal</a></li>
+                <li><a href="../MultiplicativeCongruence/multiplicativeCongruence.html">Congruencia Multiplicativa</a></li>
+                <li><a href="../UniformDistribution/uniformDistribution.html">Distribucion Uniforme</a></li>
+                <li><a href="../NormalDistribution/normalDistribution.html">Distribucion Normal</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="title">
+                <h2>Congruencia Lineal</h2>
+            </div>
+            <div class="inputs">
+                <div class="inputs-input">
+                    <label for="seed" class="">Xo</label>
+                    <input type="number" class="" id="x0" required>
+                </div>
+                <div class="inputs-input">
+                    <label for="k" class="">k</label>
+                    <input type="number" class="" id="k" required>
+                </div>
+                <div class="inputs-input">
+                    <label for="c" class="">c</label>
+                    <input type="number" class="" id="c" required>
+                </div>
+                <div class="inputs-input">
+                    <label for="g" class="">g</label>
+                    <input type="number" class="" id="g" required>
+                </div>
+                <div class="inputs-input">
+                    <label for="min" class="">Min</label>
+                    <input type="number" class="" id="min" required>
+                </div>
+                <div class="inputs-input">
+                    <label for="max" class="">Max</label>
+                    <input type="number" class="" id="max" required>
+                </div>
+            </div>
+            <div class="inputs-button">
+                <button type="button"  id="generate" class ="btn">Generar</button>
+            </div>
+        <div class="results">
+            <table id="table-content">
+                <thead>
+                    <tr>
+                        <th scope="col">i</th>
+                        <th scope="col">Xi</th>
+                        <th scope="col">Ri</th>
+                        <th scope="col">Ni</th>
+                    </tr>
+                </thead>
+            
+            </table>
+        </div>
+        </div>
+    </div>
+    
+    <script src="LinearCongruence.js"></script>
+</body>
+</html>
